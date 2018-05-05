@@ -1,0 +1,368 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.botones{
+	position: relative;
+   	width: 200px;
+   	left: 50%;
+   	margin-left: -100px;
+}
+
+.agregar {
+  	background: url(../img/agregar.jpg) /* Url de la imagen */ no-repeat center center, #00CD47; /* Color del botón */;
+	background-size: 100%; /* Tamaño de la imagen */
+	position: relative;
+	left: 10%;
+  	float: left;
+  height: 50px;  /* Alto del botón */
+  width: 50px;  /* Ancho del botón */
+  display: table;
+  border-radius: 100%;
+  cursor: pointer;
+    box-shadow:
+/* Sombras externa */
+inset 0 10px 15px rgba(255,255,255,.35), inset 0 -10px 15px rgba(0,0,0,.05), inset 10px 0 15px rgba(0,0,0,.05), inset -10px 0 15px rgba(0,0,0,.05),
+/* Sombra interna */
+0 5px 20px rgba(0,0,0,.1);
+}
+
+.buscar {
+  	background: url(../img/buscar.jpg) /* Url de la imagen */ no-repeat center center, #49C5BA; /* Color del botón */;
+	background-size: 100%; /* Tamaño de la imagen */
+	position: relative;
+	left: 15%;
+  	float: left;
+  height: 50px;  /* Alto del botón */
+  width: 50px;  /* Ancho del botón */
+  display: table;
+  border-radius: 100%;
+  cursor: pointer;
+    box-shadow:
+/* Sombras externa */
+inset 0 10px 15px rgba(255,255,255,.35), inset 0 -10px 15px rgba(0,0,0,.05), inset 10px 0 15px rgba(0,0,0,.05), inset -10px 0 15px rgba(0,0,0,.05),
+/* Sombra interna */
+0 5px 20px rgba(0,0,0,.1);
+}
+
+.imprimir {
+  	background: url(../img/imprimir.jpg) /* Url de la imagen */ no-repeat center center,  #4962BA; /* Color del botón */;
+	background-size: 100%; /* Tamaño de la imagen */
+	position: relative;
+	left: 20%;
+  height: 50px;  /* Alto del botón */
+  width: 50px;  /* Ancho del botón */
+  display: table;
+  border-radius: 100%;
+  cursor: pointer;
+    box-shadow:
+/* Sombras externa */
+inset 0 10px 15px rgba(255,255,255,.35), inset 0 -10px 15px rgba(0,0,0,.05), inset 10px 0 15px rgba(0,0,0,.05), inset -10px 0 15px rgba(0,0,0,.05),
+/* Sombra interna */
+0 5px 20px rgba(0,0,0,.1);
+}
+
+/* Al presionar */
+.boton:active {
+  box-shadow: inset 0 5px 30px rgba(0,0,0,.2); /* Sombra interior */
+  background-size: 55%; /* Cambiamos el tamaño de la imagen */
+}
+
+.ventana{
+	display: none;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: fixed;
+	background-image: url(../img/fondonegro.png);
+	top: 0;
+	left: 0;
+}
+
+.formulario{
+	width: 30%;
+	height: 50%;
+	padding: 50px;
+	background-color: #fff;
+	color: #666;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -200px;
+	margin-top: -170px; 
+}
+
+.cerrar {
+	font-weight: 900;
+	text-align: right;
+}
+
+.cerrar a{
+	color: red;
+}
+
+/*h1{
+	text-align: center;
+}*/
+
+.form input {
+	height: 22px;
+	margin-left: 15%;
+	width: 70%;
+	max-width: 100%;
+}
+
+.form select {
+	height: 22px;
+	margin-left: 15%;
+	width: 70%;
+	max-width: 100%;
+}
+
+
+
+/*table .form {
+		border: 0;
+	}
+
+	table .form tr {
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #fff;
+	}
+
+	table .form td {
+		display: block;
+		text-align: right;
+		font-size: 15px;
+		border-bottom: 1px dotted #fff;
+	}
+
+	table .form td:last-child {
+		border-bottom: 0;
+	}
+
+	table .form td:before {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: 600;
+	}*/
+
+
+
+
+
+
+
+
+
+.buscardor{
+	display: none;
+}
+
+
+caption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+table{
+	border: 1px solid #ccc;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table thead tr {
+	background-color: #fff;
+	color: black;
+}
+
+table tr{
+	border: 1px solid #fff;
+	padding: 5px;
+}
+
+table tr a{
+	color: black;
+}
+
+table tr:nth-child(even) {
+	background-color: #ccc;
+	color: black;
+}
+
+table tr:nth-child(even) a {
+	color: white;
+}
+
+/*Tablas responsivas con css3 y html solamente paso a paso*/
+
+table td, table th{
+	padding: 10px;
+	text-align: center;
+}
+
+table th{
+	text-transform: uppercase;
+	font-family: 18px;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+/* Responsive*/
+
+@media screen and (max-width: 480px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.formulario{
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+		top: 10%;
+		left: 0;
+		text-align:center;
+		margin: 0 auto;
+		position: absolute;
+	}
+
+	.algo{
+		background: #432;
+		width: 100%;
+	}
+
+	.form {
+		border: 0;
+	}
+
+	.form tr {
+		width: 100%;
+		height: 50px;
+		margin-bottom: 50px;
+		display: block;
+	}
+
+	.form tr td {
+		text-align: center;
+		height: 50%;
+		width: 50%;
+		float: left;
+	}
+
+	.form tr td input{
+		width: 100%;
+		height: 25px;
+		top: -3px;
+		position: relative;
+	}
+
+	.form tr td select{
+		width: 100%;
+		height: 25px;
+		top: -5px;
+		position: relative;
+	}
+
+	/*.form tr td {
+		width: 50%;
+		float: left;
+		display: block;
+		text-align: right;
+		font-size: 15px;
+		border-bottom: 1px dotted #ccc;
+	}
+
+	.form tr td input{
+		background: #ccc;
+		width: 100%;
+	}
+
+	.form td:last-child {
+		border-bottom: 0;
+	}
+
+	.form td:before {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	/*.form {
+		margin: 0;
+	}
+
+	.form tr{
+		align-content: center;
+	}
+
+	.form tr td {
+		background: #ccc;
+		width: 50%;
+		float: left;
+	}
+
+	.form tr td input{
+		background: #ccc;
+		width: 100%;
+	}*/
+
+
+
+
+
+
+	table {
+		border: 0;
+	}
+
+	table tr {
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #ddd;
+	}
+
+	table td {
+		display: block;
+		text-align: right;
+		font-size: 15px;
+		border-bottom: 1px dotted #ccc;
+	}
+
+	table td:last-child {
+		border-bottom: 0;
+	}
+
+	table td:before {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	table thead {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
